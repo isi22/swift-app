@@ -18,7 +18,15 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLabel.text = "Answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
+        let addition = false
+        
+        if addition {
+            theLabel.text = "Answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            theLabel.text = "Answer is... \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
+        
+        
         
     }
     
@@ -29,12 +37,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     } 
-
-
+    
+    
 }
 
